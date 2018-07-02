@@ -1,6 +1,11 @@
 <template>
   <div id="app">
-    <users></users>
+    <ul>
+    <li> <router-link to="/">Users </router-link></li>
+    <li> <router-link to="/test">Test </router-link></li>
+    </ul>
+    <router-view></router-view>
+    
      <!-- <test></test> -->
   </div>
 </template>

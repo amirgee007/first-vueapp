@@ -4,7 +4,7 @@
 
           <form v-on:submit="addUser">  
           <input type="text" v-model="newUser.name"> <br/>
-          <input type="text" v-model="newUser.email"> <br/>
+          <input type="email" v-model="newUser.email"> <br/>
           <input type="submit" value="submit"> <br/> <br/>
           </form>
          <ul> 
@@ -48,7 +48,6 @@ export default {
 
         deleteUser: function (user){
             this.users.splice(this.users.indexOf(user), 1);
-            e.preventDefault();
         }
          },
           created: function(){
