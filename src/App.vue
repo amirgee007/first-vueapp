@@ -3,6 +3,7 @@
     <ul>
     <li> <router-link to="/">Users </router-link></li>
     <li> <router-link to="/test">Test </router-link></li>
+      <li> <router-link to="/jeffrey">Jeffrey </router-link></li>
     </ul>
     <router-view></router-view>
     
@@ -13,12 +14,14 @@
 <script>
 import Test from './components/Test.vue'
 import Users from './components/Users.vue'
+import Jeffrey from './components/Jeffrey.vue'
 
 export default {
   name: 'app',
   components: {
     Test,
-    Users
+    Users,
+    Jeffrey
   }
 }
 </script>

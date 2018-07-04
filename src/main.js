@@ -5,11 +5,12 @@ import vueResource from 'vue-resource';
 import App from './App.vue';
 import Users from './components/Users';
 import Test from './components/Test';
+import Jeffrey from './components/Jeffrey';
 
 Vue.use(vueResource)
 Vue.use(VueRouter)
-Vue.config.productionTip = false
 
+Vue.config.productionTip = false
 
 const router = new VueRouter({
 
@@ -17,7 +18,8 @@ const router = new VueRouter({
   base: __dirname,
   routes: [
     {path:'/', component:Users},
-    {path:'/test', component:Test}
+    {path:'/test', component:Test},
+    {path:'/jeffrey', component:Jeffrey}
   ] 
 
 
