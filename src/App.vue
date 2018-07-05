@@ -1,10 +1,12 @@
 <template>
   <div id="app">
-    <ul>
-    <li> <router-link to="/">Users </router-link></li>
-    <li> <router-link to="/test">Test </router-link></li>
-      <li> <router-link to="/jeffrey">Jeffrey </router-link></li>
-    </ul>
+
+
+    <router-link to="/">Users </router-link> |
+    <router-link to="/test">Test </router-link> |
+    <router-link to="/jeffrey">Jeffrey </router-link> |
+    <router-link to="/max">Max </router-link> |
+  
     <router-view></router-view>
     
      <!-- <test></test> -->
@@ -15,13 +17,15 @@
 import Test from './components/Test.vue'
 import Users from './components/Users.vue'
 import Jeffrey from './components/Jeffrey.vue'
+import Max from './components/Max.vue'
 
 export default {
   name: 'app',
   components: {
     Test,
     Users,
-    Jeffrey
+    Jeffrey,
+    Max
   }
 }
 </script>

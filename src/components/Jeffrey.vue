@@ -1,6 +1,7 @@
 <template>
-    <div>
+<div>
 
+<br/>
 <form v-on:submit.prevent="handleIt" v-on:click="updatCount">
     <!-- v-on:click="count+=1"  -->
 
@@ -14,6 +15,7 @@
 <!-- <pre> {{$data | json }}</pre> -->
 
     </div>
+  
 </template>
 
 <script>
@@ -46,7 +48,7 @@ export default {
     computed: {
     
 
-    }
+    } 
 
     }
 </script>

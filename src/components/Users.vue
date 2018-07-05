@@ -2,12 +2,15 @@
     <div class="users">
         <h1>Users</h1>  
 
-          <form v-on:submit="addUser">  
+          <form v-on:submit="addUser">
+          <label> Name</label>  
           <input type="text" v-model="newUser.name"> <br/>
+          <label> Email</label>  
           <input type="email" v-model="newUser.email"> <br/>
           <input type="submit" value="submit"> <br/> <br/>
           </form>
-         <ul> 
+         <ul>
+
         <li v-for="user in users" v-bind:key="user.name">
           <input type="checkbox" class="toggle" v-model="user.contracted"> <br/>
           <span :class="{contracted: user.contracted}">
@@ -16,8 +19,6 @@
           </span>
         </li><br/>
         </ul>
-
-    
     </div>
 </template>
 

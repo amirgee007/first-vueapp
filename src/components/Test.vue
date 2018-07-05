@@ -8,6 +8,7 @@
     <ul> 
         <li v-for="item in items"  v-bind:key="item.title">{{item.title}}</li><br/>
     </ul>
+    
     <input type="text" v-model="title"> <br/> <br/>
 
     <button v-on:click="clickable"> Click to see</button><br/><br/>
